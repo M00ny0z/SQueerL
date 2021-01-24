@@ -6,3 +6,11 @@
 .text-bold {
    font-weight: bold !important;
 }
+
+.add {
+   color: #16C79A;
+}
+
+.add:hover {
+   color: #196b33;
+}
