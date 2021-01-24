@@ -8,12 +8,12 @@ const CurrentGoalList = () => {
 
    const renderGoals = () => {
       return goals.map(
-         (goal) => <Goal name={ goal.name } code={ goal.code } />
+         (goal) => <Goal name={ goal.name } code={ goal["add-code"] } />
       );
    };
 
    return (
-      <div>
+      <div className="d-flex flex-wrap">
          { renderGoals() }
       </div>
    );
