@@ -23,24 +23,24 @@ const useGlobalGoals = () => {
       //const response = await api('/members');
       const response = {
          data: [{
-            name: "Walk a mile",
-            "add-code": "XYZ123"
+            name: "Start/Write in a positivity journal",
+            "add-code": "POS247"
          },
          {
-            name: "Walk the dog",
-            "add-code": "ABC123"
+            name: "Reflect on your day",
+            "add-code": "YOU123"
          },
          {
-            name: "Go to the gym",
-            "add-code": "DFG123"
+            name: "Take a walk for 30 minutes",
+            "add-code": "WLK333"
          },
          {
-            name: "Meditate",
-            "add-code": "JFK123"
+            name: "Meditate for 30 minutes",
+            "add-code": "MED333"
          },
          {
-            name: "Write in Reflection Journal",
-            "add-code": "DYZ123"
+            name: "Volunteer for a local organization",
+            "add-code": "VOL247"
          }]
       };
       const requestedGlobalGoals = response.data;
