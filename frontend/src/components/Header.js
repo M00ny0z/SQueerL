@@ -38,6 +38,14 @@ const Header = () => {
             >
                Home
             </Link>
+
+            <Link to="/global"
+                  className={`nav-link mr-3 ${isActive("global")}`}
+                  onClick={() => setActive('global')}
+            >
+               Global Goals
+            </Link>
+
             <Link to="/profile" 
                   className={`nav-link mr-3 ${isActive("profile")}`}
                   onClick={() => setActive('profile')}
