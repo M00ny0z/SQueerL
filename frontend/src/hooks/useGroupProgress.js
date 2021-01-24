@@ -16,15 +16,18 @@ const useGroupProgress = () => {
                   members: [
                      {
                         user: "Enigmatic Elephant",
-                        percentage: 30
+                        boost: 30,
+                        delay: 70
                      },
                      {
                         user: "Dancing Dino",
-                        percentage: 59
+                        boost: 60,
+                        delay: 40
                      },
                      {
                         user: "Manic Money",
-                        percentage: 70
+                        boost: 80,
+                        delay: 20
                      },
                   ]
          }
