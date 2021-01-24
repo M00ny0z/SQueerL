@@ -7,7 +7,6 @@ import Header from './components/Header';
 import GoalView from './components/GoalView';
 import ProfileView from './components/ProfileView';
 import GlobalView from './components/GlobalView';
-import { withAuthenticator } from '@aws-amplify/ui-react';
 
 const App = () => {
    const [selectedGroup, setSelectedGroup] = useState('');
@@ -28,4 +27,4 @@ const App = () => {
    );
 };
 
-export default withAuthenticator(App);
+export default App;
