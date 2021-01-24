@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "squeerlfrontend47b343ca": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
