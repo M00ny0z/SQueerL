@@ -9,7 +9,8 @@ const useGroupProgress = () => {
       //const response = await api(`/group/${code}`);
       const response = {
          data: {
-                  code: "ZYX123",
+                  code: "XYZ123",
+                  name: "Walk a mile",
                   "total-boosts": 10,
                   "total-delays": 2,
                   "user-progress": 3,
