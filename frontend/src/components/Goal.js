@@ -8,21 +8,20 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const Goal = (props) => {
    return (
-      <div>
-         <Card>
-            <Card.Body>
-               <p className="text-bold">{ props.name }</p>
-               <p>{ props.name }</p>
-               <p> addcode: { props.code }</p>
-               <Button variant="link" href={"/squeerl/goal/" + props.code}>go to the page</Button>
-               <DropdownButton id="dropdown-basic-button" title="Change timeframe">
-                  <Dropdown.Item href="#/action-1">Once a day</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Once a week</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Every other day</Dropdown.Item>
-               </DropdownButton>
-            </Card.Body>
-         </Card>
-      </div>
+      <Card key={props.code} className="mb-3 mr-3" style={{ height: '10rem', width: '15rem' }}>
+         <Card.Body className="d-flex flex-column align-items-center justify-content-between">
+            <header>
+               <Card.Title className="text-center">{ props.name }</Card.Title>
+               <Card.Subtitle className="mb-2 text-center">Add Code: { props.code }</Card.Subtitle>
+            </header>
+
+            <DropdownButton id="dropdown-basic-button" title="Change Frequency">
+               <Dropdown.Item href="#/action-1">Once a day</Dropdown.Item>
+               <Dropdown.Item href="#/action-2">Once a week</Dropdown.Item>
+               <Dropdown.Item href="#/action-3">Every other day</Dropdown.Item>
+            </DropdownButton>
+         </Card.Body>
+      </Card>
    );
 };
 
