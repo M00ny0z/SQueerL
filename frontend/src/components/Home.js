@@ -1,10 +1,10 @@
 import React from 'react';
+import CurrentGoalList from './CurrentGoalList';
 
-import Goal from './Goal';
 const Home = () => {
    return (
       <div className="container">
-         <Goal name="Walk for an Hour"/>
+         <CurrentGoalList />
       </div> 
    );
 };
