@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
+import '../styles/index.css';
 
 import CurrentGoalList from './CurrentGoalList';
 import AddGoalModal from './AddGoalModal'
@@ -73,8 +74,8 @@ const Home = () => {
                </form>
             </Modal.Body>
          </Modal>
-         <div>
-            <h1>
+         <div className="mt-2 w-100">
+            <h1 className="border text-center p-3 title-border">
                Add a Goal
                <i className="fas fa-plus-square ml-3 add" onClick={handleShow}></i>
             </h1>
