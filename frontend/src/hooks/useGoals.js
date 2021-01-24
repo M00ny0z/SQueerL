@@ -56,3 +56,5 @@ const useGoals = () => {
 
    return goals;
 };
+
+export default useGoals;
