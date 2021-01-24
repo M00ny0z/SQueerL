@@ -8,7 +8,7 @@ const CurrentGoalList = () => {
 
    const renderGoals = () => {
       return goals.map(
-         (goal) => <Goal name={ goal.name } code={ goal["add-code"] } />
+         (goal) => <Goal name={ goal.name } key={ goal["add-code"] } code={ goal["add-code"] } />
       );
    };
 

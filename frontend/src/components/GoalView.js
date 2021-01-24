@@ -11,11 +11,9 @@ const GoalView = () => {
    const [groupState, getGroupState] = useGroupProgress();
    const goals = useGoals();
 
-   useEffect(() => updateSelected({name: 'Walk a Mile a Day', code: "ZYX123" }), []);
-
    const renderBody = () => {
-      if (groupState[selectedGroup.code]) {
-         const groupInfo = groupState[selectedGroup.code];
+      if (groupState[selectedGroup]) {
+         const groupInfo = groupState[selectedGroup];
          const options = {
             scales: {
                xAxes: [{
@@ -113,7 +111,7 @@ const GoalView = () => {
       <div>
          <header>
             <h1 className="text-bold text-center">Goal: { selectedGroup.name }</h1>
-            <h1 className="text-bold text-center">Add Code: { selectedGroup.code }</h1>
+            <h1 className="text-bold text-center">Add Code: { selectedGroup }</h1>
          </header>
 
          {
