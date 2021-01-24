@@ -10,6 +10,7 @@ import '../styles/index.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
+import { AmplifySignOut } from '@aws-amplify/ui-react';
 
 const Header = () => {
 
@@ -52,6 +53,8 @@ const Header = () => {
             >
                My Profile
             </Link>
+
+            <AmplifySignOut />
          </Nav>
       </Navbar>
    );
