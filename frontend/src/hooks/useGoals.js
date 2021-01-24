@@ -23,31 +23,24 @@ const useGoals = () => {
       //const response = await api('/members');
       const response = {
          data: [{
-            name: "Walk a mile a day",
+            name: "Walk a mile",
             "add-code": "XYZ123"
          },
          {
-            name: "Walk the dog everyday",
+            name: "Walk the dog",
             "add-code": "ABC123"
          },
          {
-            name: "Go to the gym once a week",
+            name: "Go to the gym",
             "add-code": "DFG123"
          },
          {
-            name: "Get takeout ONLY once a week",
+            name: "Meditate",
             "add-code": "JFK123"
          },
          {
-            name: "Organize things",
+            name: "Write in Reflection Journal",
             "add-code": "DYZ123"
-         },{
-            name: "Walk a mile a day",
-            "add-code": "DOL123"
-         },
-         {
-            name: "Walk a mile a day",
-            "add-code": "THE123"
          }]
       };
       const requestedGoals = response.data;
