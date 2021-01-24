@@ -5,6 +5,7 @@ import GroupContext from './context/GroupContext';
 import Home from './components/Home';
 import Header from './components/Header';
 import GoalView from './components/GoalView';
+import ProfileView from './components/ProfileView';
 
 const App = () => {
    const [selectedGroup, setSelectedGroup] = useState('');
@@ -16,6 +17,7 @@ const App = () => {
             <Header />
             <GroupContext.Provider value={{selectedGroup, updateSelected}}>
                <Route path="/" exact component={Home} />
+               <Route path="/profile" exact component={ProfileView} />
                <Route path="/goal/" component={GoalView} />
             </GroupContext.Provider>
          </BrowserRouter>
