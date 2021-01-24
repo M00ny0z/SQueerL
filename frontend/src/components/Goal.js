@@ -10,6 +10,23 @@ import { Link } from 'react-router-dom';
 
 const Goal = (props) => {
    const { selectedGroup, updateSelected } = useContext(GroupContext);
+
+   const renderDropDown = () => {
+      if (!props.global) {
+         return (
+            <DropdownButton id="dropdown-basic-button" title="Change Frequency">
+               <Dropdown.Item href="#/action-1">Once a day</Dropdown.Item>
+               <Dropdown.Item href="#/action-2">Once a week</Dropdown.Item>
+               <Dropdown.Item href="#/action-3">Every other day</Dropdown.Item>
+            </DropdownButton>
+         );
+      } else {
+         return (
+            <Button variant="success">Add Goal</Button>
+         );
+      }
+   };
+
    return (
       <Card key={props.code} className="mb-3 mr-3" style={{ height: '10rem', width: '15rem' }}>
          <Card.Body className="d-flex flex-column align-items-center justify-content-between">
@@ -20,11 +37,9 @@ const Goal = (props) => {
                <Card.Subtitle className="mb-2 text-center">Add Code: { props.code }</Card.Subtitle>
             </header>
 
-            <DropdownButton id="dropdown-basic-button" title="Change Frequency">
-               <Dropdown.Item href="#/action-1">Once a day</Dropdown.Item>
-               <Dropdown.Item href="#/action-2">Once a week</Dropdown.Item>
-               <Dropdown.Item href="#/action-3">Every other day</Dropdown.Item>
-            </DropdownButton>
+            {
+               renderDropDown()
+            }
          </Card.Body>
       </Card>
    );

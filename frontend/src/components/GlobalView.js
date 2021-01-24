@@ -8,7 +8,11 @@ const GlobalView = () => {
 
    const renderGoals = () => {
       return globalGoals.map(
-         (goal) => <Goal name={ goal.name } key={ goal["add-code"] } code={ goal["add-code"] } />
+         (goal) => <Goal name={ goal.name } 
+                         key={ goal["add-code"] } 
+                         code={ goal["add-code"] } 
+                         global={ true }
+                   />
       );
    };
 
