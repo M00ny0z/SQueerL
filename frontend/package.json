@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.34",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "apidoc": "^0.26.0",
+    "aws-amplify": "^3.3.14",
     "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
     "faker": "^5.1.0",
