@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useGroupProgress = () => {
-   const [progressState, setProgressState] = useState({});
+   const [groupState, setGroupState] = useState({});
 
    useEffect(() => getGroupInfo("xyz"), []);
 
@@ -30,10 +30,10 @@ const useGroupProgress = () => {
          }
       };
       const groupInfo = await response.data;
-      setProgressState({...progressState, [groupInfo.code]: groupInfo});
+      setGroupState({...groupState, [groupInfo.code]: groupInfo});
    };
 
-   return [progressState, getGroupInfo];
+   return [groupState, setGroupState];
 };
 
 export default useGroupProgress;
